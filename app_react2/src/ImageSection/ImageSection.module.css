@@ -28,7 +28,7 @@
     display: flex;
     justify-content: space-around;
     max-width: 450px;
-    margin-top: 1rem;
+ 
     transition: transform 0.3s;
 }
 .list_products li:hover{
@@ -38,15 +38,17 @@
     border-radius: 3px;
     transition: all 0.4s linear;
     transform: scale(1.5);
+    
+
 }
 
-.list_products li.active{
 
-border: 1px solid orange;
-}
 @media only screen and (max-width: 1200px) {
     .mainImg{
         max-width: 350px;
         height: 400px;
+        z-index: 0;
     }
+
+
 }

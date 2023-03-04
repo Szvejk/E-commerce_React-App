@@ -1,10 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900&display=swap');
-* {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-	background-color: #b3b3b3;
-}
 li,
 a {
 	font-family: Roboto;
@@ -18,14 +11,14 @@ a {
 	justify-content: flex-end;
 	align-items: center;
 	padding: 30px 10%;
+width: 100vw;
 }
 .logo {
 	cursor: pointer;
-    margin-right: auto;
+	margin-right: auto;
 }
 .nav_links {
 	list-style: none;
-    
 }
 .nav_links li {
 	display: inline-block;
@@ -38,26 +31,82 @@ a {
 	color: rgb(110, 110, 110);
 }
 .shoppCard {
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
-    cursor: pointer;
-    margin-right: 20px;
-    transition: all 0.3s ease 0s;
+	width: 30px;
+	height: 30px;
+	margin-right: 10px;
+	cursor: pointer;
+	margin-right: 20px;
+	transition: all 0.3s ease 0s;
+	margin-left: 20px;
 }
-.shoppCard:hover{
-color: rgb(59, 59, 59);
+.shoppCard:hover {
+	color: rgb(59, 59, 59);
 }
-.avatar{
-     width: 60px;
-    height: 60px;
-  border-radius: 50%;
+.avatar {
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	margin-left: 20px;
 }
 .avatarImg {
-  width: 100%;
-  height: 100%;
-    border-radius: 50%;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
 }
-.avatar:hover{
-      border: 2px solid rgb(85, 84, 84);
+.avatar:hover {
+	border: 2px solid rgb(85, 84, 84);
+}
+.mobile {
+	display: none;
+}
+
+@media screen and (max-width: 1200px) {
+	.mobile {
+		display: block;
+		margin-right: 50px;
+		display: flex;
+		align-items: center;
+	}
+	.avatar {
+		width: 40px;
+		height: 40px;
+	}
+	.shoppCard {
+		width: 20px;
+		height: 20px;
+	}
+	.logo {
+		width: 80px;
+	}
+	.menuMobileIcon {
+		width: 20px;
+		height: 20px;
+		cursor: pointer;
+	}
+
+	.dropdownWrapper {
+		position: relative;
+	}
+
+	.dropdown {
+		position: absolute;
+		background-color: white;
+		padding: 10px;
+		border-radius: 8px;
+		top: 30px;
+		background-color: rgb(250, 184, 130);	
+		position: absolute;
+		z-index: 10;
+	}
+	ul {
+		list-style: none;
+		padding: 10px;
+		line-height: 30px;
+		
+	
+	}
+
+	.nav_links {
+		display: none;
+	}
 }

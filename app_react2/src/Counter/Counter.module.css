@@ -1,34 +1,48 @@
-.counter{
-    margin-top: 10px;
-    width: 200px;
-    height: 60px;
-    display: flex;
+.counter {
+	display: flex;
+    justify-content: center;
+    align-content: center;
+	width: 100%;
+	height: 70px;
+	display: flex;
 
 }
-.buttonMinus, .buttonPlus, span{
-    width: 30px;
-    height: 30px;
-    transition: all .3s ease;
-    color: orangered;
-    border: none;
-    font-size: 30px;
-    background-color: #cfcccc;
+.buttonMinus,
+.buttonPlus,
+span {
+	width: 30px;
+	height: 30px;
+	transition: all 0.3s ease;
+	color: orangered;
+	border: none;
+	font-size: 30px;
+	background-color: #eeeeee;
+
 }
 
-.buttonMinus:hover, .buttonPlus:hover{
-   color: brown;
+.buttonMinus:hover,
+.buttonPlus:hover {
+	color: brown;
 }
-span{
-display: flex;
-align-items: center;
-justify-content: center;
-font-size: 20px;
-color: black;
-font-weight: 800;
+span {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 20px;
+	color: black;
+	font-weight: 800;
+
 }
 @media only screen and (max-width: 1200px) {
-    .buttonMinus, .buttonPlus, span{
-        width: 50px;
-        height: 50px;
+	.buttonMinus,
+	.buttonPlus,
+	span {
+		width: 120px;
+		height: 50px;
+		background-color: #fff;
+      
+	}
+    .counter{
+  margin: auto;
     }
 }
