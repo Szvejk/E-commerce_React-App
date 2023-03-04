@@ -1,0 +1,52 @@
+.container{
+    background: white;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 5px;
+    min-width: 400px;
+    min-height: 400px;
+
+
+}
+.mainImg{
+    max-width: 450px;
+    height: 450px;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+}
+.mainImg img{
+    width: 100%;
+    display: block;
+}
+.mainImg:hover{
+    cursor: zoom-in;
+}
+.list_products{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    max-width: 450px;
+    margin-top: 1rem;
+    transition: transform 0.3s;
+}
+.list_products li:hover{
+    width: 22%;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 3px;
+    transition: all 0.4s linear;
+    transform: scale(1.5);
+}
+
+.list_products li.active{
+
+border: 1px solid orange;
+}
+@media only screen and (max-width: 1200px) {
+    .mainImg{
+        max-width: 350px;
+        height: 400px;
+    }
+}

@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900&display=swap');
+
+:root {
+	--font: 'Roboto', sans-serif;
+}
+.price {
+	display: flex;
+	font-size: 30px;
+	font-weight: 800;
+	font-family: var(--font);
+	padding-top: 10%;
+	background-color: #fff;
+}
+.discount {
+	margin-left: 20px;
+	background-color: rgb(248, 189, 133);
+	font-size: 15px;
+	height: 25px;
+	width: 30px;
+	color: rgb(223, 68, 12);
+	display: flex;
+	justify-items: center;
+	align-items: center;
+	font-family: var(--font);
+	opacity: .7;
+	
+}
+.oldPrice {
+	margin-top: 10px;
+	text-decoration: line-through;
+	color: gray;
+	font-family: var(--font);
+	background-color: #fff;
+	font-size: 14px;
+	font-weight: 600;
+}
+.currentPrice{
+	background-color: #fff;
+}

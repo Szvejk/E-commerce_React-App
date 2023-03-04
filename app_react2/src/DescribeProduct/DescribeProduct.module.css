@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900&display=swap');
+
+
+.productDescription {
+	width: 600px;
+	height: 700px;
+	background-color: white;
+	display: flex;
+	padding: 15%;
+	flex-direction: column;
+	align-items: center;
+}
+.nameCompany {
+	font-size: 14px;
+	text-transform: uppercase;
+	font-family: 'Roboto', sans-serif;
+	letter-spacing: 2px;
+	font-weight: 100px;
+	color: orange;
+	margin-bottom: 15px;
+	background-color: #fff;
+}
+h1 {
+	font-size: 35px;
+	font-family: 'Roboto', sans-serif;
+	margin-bottom: 50px;
+	background-color: #fff;
+}
+.text {
+	color: rgb(73, 73, 73);
+	font-family: 'Roboto', sans-serif;
+	background-color: #fff;
+}
+@media only screen and (max-width: 1200px) {
+	.wrapperOffer{
+		display: flex;
+		flex-direction: column;
+		width: 300px;
+		height:1200px;
+	}
+	.productDescription{
+		padding: 5%;
+		width: 300px;
+	}
+}

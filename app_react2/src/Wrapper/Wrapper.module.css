@@ -1,0 +1,12 @@
+.wrap{
+    display: flex;
+
+}
+@media only screen and (max-width: 1200px) {
+    .wrap{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10%;
+    }
+}
